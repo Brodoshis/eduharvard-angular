@@ -1,0 +1,374 @@
+/*
+ * Entry point of global application style.
+ * Component-specific style should not go here and be included directly as part of the components.
+ */
+
+// Theme variables, must be included before the libraries to allow overriding defaults
+@import "theme/theme-variables";
+
+// 3rd party libraries
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i|Roboto+Slab:400,700");
+
+// Theme customization
+@import "theme/theme";
+
+html {
+    font-size: 100px;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+       -ms-text-size-adjust: 100%;
+}
+
+body {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+       -ms-text-size-adjust: 100%;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code,
+dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video  { 
+    font-family: inherit; 
+    font-size: 100%; 
+    font-weight: inherit; 
+    font-style: inherit; 
+    vertical-align: baseline; 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0;
+    background: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+                          
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q { 
+    -webkit-hyphens: none;
+      -moz-hyphens: none;
+       -ms-hyphens: none;
+           hyphens: none;
+            quotes: none;
+}
+
+figure {
+    margin: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+legend {
+    white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+input,
+textarea {
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); /* Removing the inner shadow, rounded corners on iOS inputs */
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    line-height: 1;
+    cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+    -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+    border: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0; /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+}
+
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+    border: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}	
+
+/* Repeatable Patterns
+-------------------------------------------------------------- */
+*,
+*:before,
+*:after {
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+body {
+font: 14px/25px "Roboto", sans-serif;
+font-weight: 400;
+background-color: #fff;		
+color: #6f787f;
+}
+
+a {		
+text-decoration: none;
+-webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+color: #ffbf43;
+text-decoration: none;
+outline: 0;
+-webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+
+ul, ol {
+padding: 0;
+}
+
+img {
+max-width: 100%;
+height: auto;		
+}
+
+.img-right {
+margin: 0 0 0 50px !important;
+float: right;
+}
+
+b, strong {
+font-weight: 900;
+}
+
+.entry-page p {
+margin-bottom: 25px;
+}
+
+button {
+border: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+display: inline-block;
+color: #fff; 
+padding: 0 24px 0 30px;
+height: 50px;
+line-height: 45px;
+font-size: 13px;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+color: #ffffff;
+background: #ffbf43;
+border: 2px solid #ffbf43;
+-webkit-border-radius: 0px;
+-ms-border-radius: 0px;
+-o-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;    
+font-weight: 700;
+font-family: "Roboto", sans-serif;
+position: relative;	
+-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+       transition: all 0.3s ease-in-out;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {	
+position: relative;
+display: block;
+width: 100%;
+line-height: 24px;
+padding: 6px 0px 10px 0px;
+color: #8e9699;
+border-bottom: 1px solid #e5e5e5;
+border-top: none;
+border-left: none;
+border-right: none;
+height: 45px;
+border-radius: 0px;   
+margin-bottom: 20px;
+-webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+border-bottom: 1px solid #ffbf43;
+-webkit-box-shadow: none;
+   -moz-box-shadow: none;
+        box-shadow: none;
+}
+
+textarea {
+width: 100%;
+padding: 4px 15px 10px 0px;   
+height: 81px;
+}
+
+input[type="checkbox"] {
+display: inline;
+}
+
+textarea:-moz-placeholder,
+textarea::-moz-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder {		
+color: #3d3d3d;
+opacity: 1;
+}
+
+input:-ms-input-placeholder {
+color: #3d3d3d;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+color: #3d3d3d;
+opacity: 1;
+}
+
+/* bootstrap resetting elements */
+.btn {
+background-image: none;
+}
+
+textarea, 
+input[type="text"],
+input[type="submit"],
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input,
+.dropdown-menu,
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus {
+-webkit-appearance: none;
+text-shadow: none;
+-webkit-box-shadow: none;
+   -moz-box-shadow: none;
+     -o-box-shadow: none;
+        box-shadow: none;
+color: #8e9699;
+}
+
+.blog-single .entry p {
+margin-bottom: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+h1 { font-size: 36px; line-height: 40px; }
+h2 { font-size: 18px; line-height: 22px; }
+h3 { font-size: 16px; line-height: 20px; }
+h4 { font-size: 14px; line-height: 18px; }

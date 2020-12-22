@@ -1,0 +1,132 @@
+.container {
+    width: 85%;
+    padding: 35px;
+
+    .fields {
+        display: flex;
+        flex-flow: nowrap row;
+        align-items: center;
+        justify-content: start;
+
+        // background-color: blue;
+
+        * {
+            flex-grow: 1;
+            height: 50px;
+        }
+
+        select, option, p, input {
+            width: 375px;
+        }
+
+        select, input {
+            border: 1px solid rgba(grey, 0.3);
+            border-radius: 1px;
+            text-indent: 50px;
+        }
+
+        select {
+            margin-right: 50px;
+        }
+
+        input {
+            margin-right: 40px;
+        }
+
+        .line {
+            width: 1px;
+            height: 50px;
+            border-left: 1px solid rgba(grey, 0.3);
+        }
+
+        .button
+
+    }
+
+}
+
+
+
+
+
+
+
+// .position_form .f-select #formsearch-flatcourse {
+//     position: absolute;
+//     width: 100%;
+//     top: -212px;
+// }
+
+// .flat-iconbox .title-section {
+//     margin-bottom: 53px;
+// }
+
+// .iconbox.style-title .box-header .box-title {
+//     text-transform: none;
+// }
+
+// .wrap-price-post .title-section {
+//     margin-bottom: 46px;
+// }
+
+// /* Scroll */
+// .wrap-times.content {
+//     overflow: auto;
+//     position: relative;
+//     max-width: 511px;
+//     height: 263px;
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+
+// .lates-new h3.entry-title {
+//     text-transform: none!important;
+//     margin-left: -1px;
+// }
+
+// .lates-new .entry .entry-post .entry-author span a,
+// .lates-new .entry .entry-post .entry-author span{
+//     font-size: 14px!important;
+// }
+
+// /* Flat-contact */
+// .flat-contact .title-section{
+//     margin-bottom: 20px;
+// }
+
+// .flat-contact .subscribe-contact .title-section{
+//     margin-bottom: 50px;
+// }
+
+// .flat-contact .right-contact {
+//     text-align: right;
+//     padding-top: 7px;
+//     margin-left: -5px;
+// }
+
+// .flat-contact .subscribe-contact {
+//     background-color: #fff;
+//     box-shadow: 0px 19px 35px 0px rgba(0, 0, 0, 0.15);
+// }
+
+// .flat-contact .formsearch {
+//     text-align: center;
+//     padding: 0;
+//     box-shadow: none;
+// }
+
+// .flat-contact .formsearch .subscribe-btn {
+//     float: left;
+//     margin-left: 40px;
+// }
+
+// .flat-contact .formsearch .subscribe-email {
+//     float: left;
+//     width: 330px;
+//     margin: 10px 0px 0px 227px;
+// }
+
+// .flat-contact .formsearch #emailsubscribe {
+//     font-size: 16px;
+// }

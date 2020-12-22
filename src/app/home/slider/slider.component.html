@@ -1,0 +1,55 @@
+<div class="slider-wrapper">
+    <ul class="slides">
+        <li #slide *ngFor="i of slideBools" class="slide-content slider-{{i}}"
+            [@slide-change]="i==2 ? {value: ':leave', params : {backgroundPosition: '1500px 50%'}} : {value: ':leave', params : {backgroundPosition: '50% 700px'}}">
+
+            <div class='last-slide'>
+
+                <div class="arrow arrow-left" (click)="prevSlide(true)">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="arrow arrow-right" (click)="nextSlide(true)">
+                    <i class=" fas fa-chevron-right"></i>
+                </div>
+
+                <div class="progress-bar" @progress-animation></div>
+
+                <div class="tp-caption title-slide" id="slide-3049-layer-1" @titles-down
+                    style="z-index: 17; white-space: nowrap;text-transform:left;">
+                    <span>FREE ONLINE COURSES FROM THE WORLD'S BEST</span>
+                    <br>
+                    UNIVERSITIES
+                </div>
+
+                <div @subs-up-sub class="tp-caption sub-title"
+                    style="z-index: 17; white-space: nowrap;text-transform:left;">
+                    Education is the most powerful
+                    weapon which you can use to change the world.
+                </div>
+
+                <a @subs-up-a href="#" class="tp-caption flat-button-slider bg-orange">
+                    START A COURSE
+                </a>
+
+                <div class="vid-container" *ngIf="i == 3" @vid-animation>
+                    <iframe
+                        src="https://player.vimeo.com/video/202903642?background=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=iframe74957?autoplay=1&amp;autopause=0&amp;muted=1&amp;background=1&amp;playsinline=1"
+                        webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="iframe74957"
+                        data-ready="true" class="iframe"></iframe>
+                </div>
+            </div>
+        </li>
+
+        <!-- <li class="slide-content slider-2">
+            <p>Blah Blah Blah</p>
+        </li>
+
+        <li class="slide-content slider-3">
+            <p>Blah Blah Blah</p>
+        </li> -->
+
+    </ul>
+</div>
+<!-- <img src="../../../assets/images/slides/slides1.jpg" alt=""> -->
+
+<!-- <iframe src="https://player.vimeo.com/video/202903642?background=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=iframe69013?autoplay=1&amp;autopause=0&amp;muted=1&amp;background=1&amp;playsinline=1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="100%" height="100%" style="" id="iframe69013" data-ready="true" class="resizelistener"></iframe> -->
