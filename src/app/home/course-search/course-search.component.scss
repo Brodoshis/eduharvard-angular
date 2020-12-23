@@ -1,28 +1,80 @@
 .container {
-    width: 85%;
+    width: 75%;
     padding: 35px;
+    background-color: white;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
 
     .fields {
         display: flex;
         flex-flow: nowrap row;
         align-items: center;
-        justify-content: start;
+        justify-content: space-between;
 
         // background-color: blue;
 
         * {
-            flex-grow: 1;
+            // flex-grow: 1;
             height: 50px;
         }
 
-        select, option, p, input {
-            width: 375px;
+        .li2 {
+            margin-left: 40px;
+        }
+
+        .li4 {
+            position: relative;
+            z-index: 200;
+        }
+
+        .line {
+            margin: 0 60px;
+        }
+
+        .select-container {
+            position: relative;
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+        select {
+            appearance: none;
+        }
+
+        .select-container:after {
+            content: '>';
+            font: 20px "Consolas";
+            font-weight: bold;
+            color: #333;
+            // -webkit-transform: rotate(90deg);
+            // -moz-transform: rotate(90deg);
+            // -ms-transform: rotate(90deg);
+            top: 50%;
+            transform: translateY(-50%) rotate(90deg);
+            right: 22px;
+            
+            padding: 0 0 2px;
+            
+            position: absolute;
+            pointer-events: none;
+          }
+
+        .select-container, select, option, p, input {
+            width:340px;
+            color: #22272b;
+            padding: 0px;
         }
 
         select, input {
             border: 1px solid rgba(grey, 0.3);
             border-radius: 1px;
-            text-indent: 50px;
+            text-indent: 40px;
+
+            &:focus {
+                border: 1px solid #ffbf43;
+            }
+
         }
 
         select {
@@ -39,7 +91,50 @@
             border-left: 1px solid rgba(grey, 0.3);
         }
 
-        .button
+        .button-case {
+            border: 1.8px solid #ffbf43;
+            background-color: #ffbf43;
+            width: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 200 !important;
+
+            transition: background-color 0.2s ease-out;
+
+            &::after {
+                content: "";
+                display: block !important;
+                width: 180px;
+                height: 50px;
+                border: 1px solid #ffbf43;
+                position: absolute;
+                transform: translate(10px, 10px);
+                z-index: -1 !important;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: white;
+
+                .button-text {
+                    color: black;
+                }
+
+            }
+
+            .button-text {
+                color: white;
+                font-family:'Roboto';
+                font-weight: 700;
+                font-size: 14px;
+                // background-color: blue;
+                flex-grow: 0;
+                height: auto;
+            }
+
+        }
 
     }
 

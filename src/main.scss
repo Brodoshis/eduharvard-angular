@@ -13,7 +13,7 @@
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i|Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i|Roboto+Slab:400,700|consolas");
 
 // Theme customization
 @import "theme/theme";
@@ -79,6 +79,8 @@ img {
     border: 0;
     -ms-interpolation-mode: bicubic;
     vertical-align: middle;
+    max-width: 100%;
+    height: auto;		
 }
 
 legend {
@@ -372,3 +374,12 @@ h1 { font-size: 36px; line-height: 40px; }
 h2 { font-size: 18px; line-height: 22px; }
 h3 { font-size: 16px; line-height: 20px; }
 h4 { font-size: 14px; line-height: 18px; }
+
+.title-section .title {
+    font-size: 30px;
+    font-family: 'Roboto Slab';
+    line-height: 36px;
+    color: #22272b;
+    font-weight: 700;
+    margin-bottom: 8px;
+}

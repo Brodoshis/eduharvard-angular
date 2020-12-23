@@ -1,3 +1,25 @@
+.boxed {
+  position: relative;
+}
+
+.search-container {
+  position: absolute;
+  z-index: 1100;
+  transform: translateY(-50%);
+  // background-color: blue;
+  width: 100%;
+}
+
+.offering-container {
+  background-color: #f5f8fa;
+  padding-top: 120px;
+}
+
+
+
+
+
+
 
 html {
   overflow-y: scroll;

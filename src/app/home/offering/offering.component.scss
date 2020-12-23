@@ -1,0 +1,147 @@
+.offering-container {
+    width: 75%;
+    margin: 0 12.5%;
+
+    .title-container {
+
+        padding-top: 35px;
+    
+        .sub-title {
+            color: #90979c;
+            font-size: 17px;
+        }
+
+    }
+
+    .icon-boxes {
+
+        padding: 50px 0 100px 0;
+        // margin: 100px 0;
+
+        .box-header, .icon-box {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    * {
+        text-align: center;
+    }
+
+}
+
+
+.box-content {
+    color: #6f787f;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+.iconbox .box-header .box-icon {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    // background-color: #f1594f;
+    margin-bottom: 21px;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+
+.icon-cyan .box-icon {
+    background-color: #5de2d7;
+}
+
+.iconbox.icon-green .box-icon {
+    background-color: #96ca4a;
+}
+
+.iconbox.icon-blue .box-icon {
+    background-color: #62ade0;
+}
+.iconbox.icon-red .box-icon {
+    background-color: #f1594f;
+}
+
+.iconbox:hover .box-icon {
+    transform: rotateY(-180deg);
+    box-shadow: 0px 13px 24px 0px rgba(0, 0, 0, 0.25); 
+}
+
+.iconbox.bg-style:hover .box-icon {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.iconbox.icon-green .box-icon {
+    background-color: #96ca4a;
+}
+
+.iconbox.icon-blue .box-icon {
+    background-color: #62ade0;
+}
+
+.iconbox.icon-cyan .box-icon {
+    background-color: #5de2d7;
+}
+
+.iconbox .box-header .box-icon img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29%;
+}
+
+.iconbox .box-header .box-title {
+    font-size: 18px;
+    line-height: 36px;
+    
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.iconbox .box-header .box-title a {
+    position: relative;
+    color: #22272b;
+}
+
+.iconbox .box-header .box-title a:hover{
+    color: #ffbf43;
+}
+
+.box-content p {
+    color: #6f787f;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.iconbox.bg-style .box-header .box-icon {
+    border-radius:0;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 9px;
+}
+
+.iconbox.bg-style .box-header .box-icon:hover {
+    box-shadow: none;
+}
+
+.iconbox.bg-style .box-header .box-title {
+    line-height: 24px;
+}
+
+.iconbox.bg-style .box-header .box-title a {
+    color: #FFF;
+}
+
+.iconbox.bg-style .box-header .box-title.style2 {
+    display: none;
+}
